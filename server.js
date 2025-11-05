@@ -1,13 +1,21 @@
 require("dotenv").config()
 const express = require("express")
+const { connectToDb } = require("./db/connect")
+const contactsRoute = require("./routes/contactsRoute")
 
 const app = express()
 const port = process.env.PORT || 8080;
 
-app.get("/", (req, res) => {
-    res.send("Hello World")
-})
+app.use("/contacts", contactsRoute)
 
-app.listen(port, () => {
-    console.log(`Server listening on port ${port}`)
-})
+// Mongo connection 
+connectToDb((err) => {
+  if (!err) {
+    app.listen(port, () => {
+      console.log(`✅ Server running on port ${port}`);
+    });
+  } else {
+    console.error("❌ Failed to connect to the database", err);
+    process.exit(1);
+  }
+});
