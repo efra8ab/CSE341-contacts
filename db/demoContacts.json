@@ -1,0 +1,22 @@
+[
+  {
+    "_id": {
+      "$oid": "69087bd558cdd8c50f19938a"
+    },
+    "firstName": "Bruce",
+    "lastName": "Banner",
+    "email": "smash@gamma.com",
+    "favoriteColor": "Green",
+    "birthday": "1980"
+  },
+  {
+    "_id": {
+      "$oid": "69087bd558cdd8c50f19938b"
+    },
+    "firstName": "Diana",
+    "lastName": "Prince",
+    "email": "wonderwoman@themiscira.gov",
+    "favoriteColor": "Yellow",
+    "birthday": "1984"
+  }
+]
