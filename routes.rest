@@ -45,11 +45,11 @@ POST https://cse341-contacts-vs3z.onrender.com/contacts
 Content-Type: application/json
 
 {
-  "firstName": "Ada",
-  "lastName": "Lovelace",
-  "email": "ada@example.com",
+  "firstName": "Peter",
+  "lastName": "Parker",
+  "email": "friendly@nyc.com",
   "favoriteColor": "blue",
-  "birthday": "1815-12-10"
+  "birthday": "1999"
 }
 
 ### Update contact
@@ -57,11 +57,11 @@ PUT https://cse341-contacts-vs3z.onrender.com/contacts/69087bd558cdd8c50f19938a
 Content-Type: application/json
 
 {
-  "firstName": "Ada",
-  "lastName": "Lovelace",
-  "email": "ada@analytical.engine",
+  "firstName": "Miles",
+  "lastName": "Morales",
+  "email": "Mmorales@nycu.edu",
   "favoriteColor": "navy",
-  "birthday": "1815-12-10"
+  "birthday": "2009"
 }
 
 ### Delete contact
