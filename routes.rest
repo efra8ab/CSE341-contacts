@@ -4,8 +4,34 @@
 GET http://localhost:8080/contacts
 
 ### Get One contact by id
-GET http://localhost:8080/contacts/69087dae58cdd8c50f19938c
+GET http://localhost:8080/contacts/6918ce00a73e6f88424b5681
 
+### Create contact
+POST http://localhost:8080/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Peter",
+  "lastName": "Parker",
+  "email": "friendly@nyc.com",
+  "favoriteColor": "blue",
+  "birthday": "1999"
+}
+
+### Update contact
+PUT http://localhost:8080/contacts/6918ce00a73e6f88424b5681
+Content-Type: application/json
+
+{
+  "firstName": "Miles",
+  "lastName": "Morales",
+  "email": "Mmorales@nycu.edu",
+  "favoriteColor": "navy",
+  "birthday": "2009"
+}
+
+### Delete contact
+DELETE http://localhost:8080/contacts/6918ce00a73e6f88424b5681
 
 // PRODUCTION
 ### Get All contacts
@@ -13,3 +39,30 @@ GET https://cse341-contacts-vs3z.onrender.com/contacts
 
 ### Get One contact by id
 GET https://cse341-contacts-vs3z.onrender.com/contacts/69087bd558cdd8c50f19938a
+
+### Create contact
+POST https://cse341-contacts-vs3z.onrender.com/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Ada",
+  "lastName": "Lovelace",
+  "email": "ada@example.com",
+  "favoriteColor": "blue",
+  "birthday": "1815-12-10"
+}
+
+### Update contact
+PUT https://cse341-contacts-vs3z.onrender.com/contacts/69087bd558cdd8c50f19938a
+Content-Type: application/json
+
+{
+  "firstName": "Ada",
+  "lastName": "Lovelace",
+  "email": "ada@analytical.engine",
+  "favoriteColor": "navy",
+  "birthday": "1815-12-10"
+}
+
+### Delete contact
+DELETE https://cse341-contacts-vs3z.onrender.com/contacts/69087bd558cdd8c50f19938a
